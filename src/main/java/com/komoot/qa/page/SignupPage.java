@@ -26,7 +26,6 @@ public class SignupPage extends TestBase {
 	@FindBy(className = "css-qbizf4")
 	WebElement submitLink;
 
-	
 	@FindBy(xpath = "//*[@class='tw-text-right']//span[text()='Sign up or log in']")
 	WebElement signupLink;
 
@@ -41,6 +40,9 @@ public class SignupPage extends TestBase {
 
 	@FindBy(xpath = "//a[text()='Log Out']")
 	WebElement logoutClick;
+
+	@FindBy(xpath = "//p[contains(text(),'Unfortunately we couldn’t log you in. Please verify your email and password and try again.')]")
+	WebElement links;
 
 	public SignupPage() {
 		PageFactory.initElements(driver, this);
@@ -69,14 +71,21 @@ public class SignupPage extends TestBase {
 		return userName.isDisplayed();
 	}
 
-	public void verifyLogout() {
+	public void verifyInvalidUser(String em, String pw) {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.pageLoadTimeout, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtil.Implicit, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
 		Actions action = new Actions(driver);
-		action.click(logoutLink).build().perform();
-		logoutClick.click();
+		action.click(signupLink).build().perform();
+		email.sendKeys(em);
+		driver.manage().timeouts().pageLoadTimeout(TestUtil.pageLoadTimeout, TimeUnit.SECONDS);
+		emailLink.click();
+		password.sendKeys(pw);
+		submitLink.click();
+		links.isDisplayed();
 	}
 
 	public String verifyLinkText() {
-		return signupLink.getText();
+		return links.getText();
 	}
 }

@@ -28,8 +28,12 @@ public class SignupPageTest extends TestBase {
 	}
 
 	@Test(priority = 3)
-	public void signupLoginTest(){
+	public void signupLoginTest() {
 		signup.clickOnSubmitButton(prop.getProperty("email"), prop.getProperty("password"));
+		// WebDriverWait wait = new WebDriverWait(driver, 100);
+		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='tw-text-right']//span[text()='Sign
+		// up or log in']")));
+
 		assertEquals(signup.verifySignupPageTitle(), "Komoot Sign-Up | Login To The Great Outdoors");
 	}
 
@@ -40,13 +44,11 @@ public class SignupPageTest extends TestBase {
 	}
 
 	@Test(priority = 1)
-	public void verifylogoutTest() {
-		signup.clickOnSubmitButton(prop.getProperty("email"), prop.getProperty("password"));
-		signup.verifyLogout();
-		WebDriverWait wait = new WebDriverWait(driver, 35);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='tw-text-right']//span[text()='Sign up or log in']")));
+	public void verifyInvalidUserTest() {
+		signup.verifyInvalidUser(prop.getProperty("email"), prop.getProperty("wrongpassword"));
 		String text = signup.verifyLinkText();
-	    assertEquals(text, "Sign up or log in");
+		assertEquals(text,
+				"Unfortunately we couldn’t log you in. Please verify your email and password and try again.");
 	}
 
 	@AfterMethod

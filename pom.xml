@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.komoot.qa</groupId>
-  <artifactId>sevensendersautomation</artifactId>
+  <artifactId>seven-senders-automation-suite</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>sevensendersautomation</name>
+  <name>seven-senders-automation-suite</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
