@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="komoot App automation Suite" duration-ms="115142" started-at="2020-12-14T17:59:18Z" finished-at="2020-12-14T18:01:13Z">
+    <groups>
+    </groups>
+    <test name="Different feature Test" duration-ms="115142" started-at="2020-12-14T17:59:18Z" finished-at="2020-12-14T18:01:13Z">
+      <class name="com.komoot.qa.page.SignupPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.komoot.qa.page.SignupPageTest@55040f2f]" name="setUp" is-config="true" duration-ms="9016" started-at="2020-12-14T18:59:31Z" finished-at="2020-12-14T18:59:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyInvalidUserTest()[pri:1, instance:com.komoot.qa.page.SignupPageTest@55040f2f]" name="verifyInvalidUserTest" duration-ms="19323" started-at="2020-12-14T18:59:40Z" finished-at="2020-12-14T18:59:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUserTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.komoot.qa.page.SignupPageTest@55040f2f]" name="teardown" is-config="true" duration-ms="688" started-at="2020-12-14T18:59:59Z" finished-at="2020-12-14T19:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.komoot.qa.page.SignupPageTest@55040f2f]" name="setUp" is-config="true" duration-ms="8968" started-at="2020-12-14T19:00:21Z" finished-at="2020-12-14T19:00:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserNameTest()[pri:2, instance:com.komoot.qa.page.SignupPageTest@55040f2f]" name="verifyUserNameTest" duration-ms="17579" started-at="2020-12-14T19:00:30Z" finished-at="2020-12-14T19:00:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserNameTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.komoot.qa.page.SignupPageTest@55040f2f]" name="teardown" is-config="true" duration-ms="860" started-at="2020-12-14T19:00:48Z" finished-at="2020-12-14T19:00:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.komoot.qa.page.SignupPageTest@55040f2f]" name="setUp" is-config="true" duration-ms="9014" started-at="2020-12-14T19:00:49Z" finished-at="2020-12-14T19:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="signupLoginTest()[pri:3, instance:com.komoot.qa.page.SignupPageTest@55040f2f]" name="signupLoginTest" duration-ms="14246" started-at="2020-12-14T19:00:58Z" finished-at="2020-12-14T19:01:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupLoginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.komoot.qa.page.SignupPageTest@55040f2f]" name="teardown" is-config="true" duration-ms="830" started-at="2020-12-14T19:01:12Z" finished-at="2020-12-14T19:01:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.komoot.qa.page.SignupPageTest -->
+      <class name="com.komoot.qa.page.HomePageTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.komoot.qa.page.HomePageTest@6ee12bac]" name="SetUp" is-config="true" duration-ms="12299" started-at="2020-12-14T18:59:18Z" finished-at="2020-12-14T18:59:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="homePageTitleTest()[pri:1, instance:com.komoot.qa.page.HomePageTest@6ee12bac]" name="homePageTitleTest" duration-ms="113" started-at="2020-12-14T18:59:30Z" finished-at="2020-12-14T18:59:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.komoot.qa.page.HomePageTest@6ee12bac]" name="teardown" is-config="true" duration-ms="725" started-at="2020-12-14T18:59:30Z" finished-at="2020-12-14T18:59:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.komoot.qa.page.HomePageTest@6ee12bac]" name="SetUp" is-config="true" duration-ms="8260" started-at="2020-12-14T19:00:00Z" finished-at="2020-12-14T19:00:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="signUpOrLoginLinkTest()[pri:2, instance:com.komoot.qa.page.HomePageTest@6ee12bac]" name="signUpOrLoginLinkTest" duration-ms="10667" started-at="2020-12-14T19:00:08Z" finished-at="2020-12-14T19:00:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpOrLoginLinkTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.komoot.qa.page.HomePageTest@6ee12bac]" name="teardown" is-config="true" duration-ms="2474" started-at="2020-12-14T19:00:19Z" finished-at="2020-12-14T19:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.komoot.qa.page.HomePageTest -->
+    </test> <!-- Different feature Test -->
+  </suite> <!-- komoot App automation Suite -->
+</testng-results>
